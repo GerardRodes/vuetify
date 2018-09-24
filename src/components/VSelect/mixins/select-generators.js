@@ -36,7 +36,7 @@ export default {
         }
       }
 
-      if (this.isAutocomplete) data.props.transition = ''
+      if (this.isAutocomplete) data.props.transition = 'none'
 
       this.minWidth && (data.props.minWidth = this.minWidth)
 
