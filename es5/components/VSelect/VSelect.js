@@ -207,6 +207,10 @@ export default {
     findExistingItem: function findExistingItem(item) {
       var _this5 = this;
 
+      if (!this.inputValue || !item) {
+        return -1;
+      }
+
       return this.inputValue.findIndex(function (i) {
         var a = _this5.getValue(i);
         var b = _this5.getValue(item);

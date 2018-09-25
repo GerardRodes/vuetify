@@ -229,6 +229,10 @@ export default {
       }
     },
     findExistingItem (item) {
+      if (!this.inputValue || !item) {
+        return -1
+      }
+
       return this.inputValue.findIndex((i) => {
         const a = this.getValue(i)
         const b = this.getValue(item)
